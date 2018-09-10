@@ -11,8 +11,6 @@
 		384C88D2214027970020B6D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384C88D0214027970020B6D8 /* Main.storyboard */; };
 		384C88D4214027980020B6D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 384C88D3214027980020B6D8 /* Assets.xcassets */; };
 		384C88D7214027980020B6D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384C88D5214027980020B6D8 /* LaunchScreen.storyboard */; };
-		3851474C214298770085750D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3851474B214298770085750D /* MainViewController.swift */; };
-		3851474E21429A7C0085750D /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3851474D21429A7C0085750D /* DataSource.swift */; };
 		385147512142A1AF0085750D /* Screen Shot 2018-08-29 at 11.12.39.png in Resources */ = {isa = PBXBuildFile; fileRef = 385147502142A1AF0085750D /* Screen Shot 2018-08-29 at 11.12.39.png */; };
 		385147532142A57E0085750D /* TodosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385147522142A57E0085750D /* TodosViewController.swift */; };
 		385147552142B09A0085750D /* CrossroadsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385147542142B09A0085750D /* CrossroadsTableViewController.swift */; };
@@ -47,8 +45,6 @@
 		384C88D8214027980020B6D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		384C88DD214027980020B6D8 /* todo-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "todo-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		384C88E8214027980020B6D8 /* todo-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "todo-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3851474B214298770085750D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		3851474D21429A7C0085750D /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		385147502142A1AF0085750D /* Screen Shot 2018-08-29 at 11.12.39.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screen Shot 2018-08-29 at 11.12.39.png"; path = "../../../../../../Desktop/Screen Shot 2018-08-29 at 11.12.39.png"; sourceTree = "<group>"; };
 		385147522142A57E0085750D /* TodosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosViewController.swift; sourceTree = "<group>"; };
 		385147542142B09A0085750D /* CrossroadsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossroadsTableViewController.swift; sourceTree = "<group>"; };
@@ -103,19 +99,15 @@
 		384C88CB214027970020B6D8 /* todo-app */ = {
 			isa = PBXGroup;
 			children = (
-				3851474F2142A1960085750D /* img */,
+				385AE8F821466E6800C7602E /* TodoApp */,
+				385AE8F721466E2D00C7602E /* Bar scanner */,
+				384C88D8214027980020B6D8 /* Info.plist */,
 				384C88CC214027970020B6D8 /* AppDelegate.swift */,
-				384C88D0214027970020B6D8 /* Main.storyboard */,
-				3851475C2142CD3C0085750D /* QRScannerController.swift */,
-				385147562142BE3E0085750D /* TodoNewViewController.swift */,
-				385147522142A57E0085750D /* TodosViewController.swift */,
-				385147582142C1B90085750D /* Todo.swift */,
 				385147542142B09A0085750D /* CrossroadsTableViewController.swift */,
 				384C88D3214027980020B6D8 /* Assets.xcassets */,
+				3851474F2142A1960085750D /* img */,
 				384C88D5214027980020B6D8 /* LaunchScreen.storyboard */,
-				384C88D8214027980020B6D8 /* Info.plist */,
-				3851474B214298770085750D /* MainViewController.swift */,
-				3851474D21429A7C0085750D /* DataSource.swift */,
+				384C88D0214027970020B6D8 /* Main.storyboard */,
 			);
 			path = "todo-app";
 			sourceTree = "<group>";
@@ -126,6 +118,24 @@
 				385147502142A1AF0085750D /* Screen Shot 2018-08-29 at 11.12.39.png */,
 			);
 			path = img;
+			sourceTree = "<group>";
+		};
+		385AE8F721466E2D00C7602E /* Bar scanner */ = {
+			isa = PBXGroup;
+			children = (
+				3851475C2142CD3C0085750D /* QRScannerController.swift */,
+			);
+			path = "Bar scanner";
+			sourceTree = "<group>";
+		};
+		385AE8F821466E6800C7602E /* TodoApp */ = {
+			isa = PBXGroup;
+			children = (
+				385147562142BE3E0085750D /* TodoNewViewController.swift */,
+				385147522142A57E0085750D /* TodosViewController.swift */,
+				385147582142C1B90085750D /* Todo.swift */,
+			);
+			path = TodoApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,12 +271,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				385147592142C1B90085750D /* Todo.swift in Sources */,
-				3851474E21429A7C0085750D /* DataSource.swift in Sources */,
 				385147572142BE3E0085750D /* TodoNewViewController.swift in Sources */,
 				385147552142B09A0085750D /* CrossroadsTableViewController.swift in Sources */,
 				384C88CD214027970020B6D8 /* AppDelegate.swift in Sources */,
 				3851475D2142CD3C0085750D /* QRScannerController.swift in Sources */,
-				3851474C214298770085750D /* MainViewController.swift in Sources */,
 				385147532142A57E0085750D /* TodosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
