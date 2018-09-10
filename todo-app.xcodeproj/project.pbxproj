@@ -17,6 +17,12 @@
 		385147572142BE3E0085750D /* TodoNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385147562142BE3E0085750D /* TodoNewViewController.swift */; };
 		385147592142C1B90085750D /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385147582142C1B90085750D /* Todo.swift */; };
 		3851475D2142CD3C0085750D /* QRScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3851475C2142CD3C0085750D /* QRScannerController.swift */; };
+		385AE8FE214670A400C7602E /* AlphaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385AE8FD214670A400C7602E /* AlphaVC.swift */; };
+		385AE900214670BD00C7602E /* BravoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385AE8FF214670BD00C7602E /* BravoVC.swift */; };
+		385AE902214670DC00C7602E /* DataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385AE901214670DC00C7602E /* DataObject.swift */; };
+		385AE9042146713100C7602E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385AE9032146713100C7602E /* ViewController.swift */; };
+		385AE9062146714500C7602E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385AE9052146714500C7602E /* SecondViewController.swift */; };
+		385AE9082146716000C7602E /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385AE9072146716000C7602E /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,12 @@
 		385147562142BE3E0085750D /* TodoNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoNewViewController.swift; sourceTree = "<group>"; };
 		385147582142C1B90085750D /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		3851475C2142CD3C0085750D /* QRScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerController.swift; sourceTree = "<group>"; };
+		385AE8FD214670A400C7602E /* AlphaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphaVC.swift; sourceTree = "<group>"; };
+		385AE8FF214670BD00C7602E /* BravoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BravoVC.swift; sourceTree = "<group>"; };
+		385AE901214670DC00C7602E /* DataObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataObject.swift; sourceTree = "<group>"; };
+		385AE9032146713100C7602E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		385AE9052146714500C7602E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		385AE9072146716000C7602E /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +111,14 @@
 		384C88CB214027970020B6D8 /* todo-app */ = {
 			isa = PBXGroup;
 			children = (
+				3851474F2142A1960085750D /* img */,
+				385AE8FC2146707C00C7602E /* Navigation */,
 				385AE8F821466E6800C7602E /* TodoApp */,
 				385AE8F721466E2D00C7602E /* Bar scanner */,
 				384C88D8214027980020B6D8 /* Info.plist */,
 				384C88CC214027970020B6D8 /* AppDelegate.swift */,
 				385147542142B09A0085750D /* CrossroadsTableViewController.swift */,
 				384C88D3214027980020B6D8 /* Assets.xcassets */,
-				3851474F2142A1960085750D /* img */,
 				384C88D5214027980020B6D8 /* LaunchScreen.storyboard */,
 				384C88D0214027970020B6D8 /* Main.storyboard */,
 			);
@@ -136,6 +149,19 @@
 				385147582142C1B90085750D /* Todo.swift */,
 			);
 			path = TodoApp;
+			sourceTree = "<group>";
+		};
+		385AE8FC2146707C00C7602E /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				385AE8FD214670A400C7602E /* AlphaVC.swift */,
+				385AE901214670DC00C7602E /* DataObject.swift */,
+				385AE8FF214670BD00C7602E /* BravoVC.swift */,
+				385AE9032146713100C7602E /* ViewController.swift */,
+				385AE9052146714500C7602E /* SecondViewController.swift */,
+				385AE9072146716000C7602E /* ThirdViewController.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,11 +296,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				385AE9062146714500C7602E /* SecondViewController.swift in Sources */,
+				385AE9042146713100C7602E /* ViewController.swift in Sources */,
 				385147592142C1B90085750D /* Todo.swift in Sources */,
 				385147572142BE3E0085750D /* TodoNewViewController.swift in Sources */,
 				385147552142B09A0085750D /* CrossroadsTableViewController.swift in Sources */,
+				385AE900214670BD00C7602E /* BravoVC.swift in Sources */,
+				385AE902214670DC00C7602E /* DataObject.swift in Sources */,
 				384C88CD214027970020B6D8 /* AppDelegate.swift in Sources */,
+				385AE8FE214670A400C7602E /* AlphaVC.swift in Sources */,
 				3851475D2142CD3C0085750D /* QRScannerController.swift in Sources */,
+				385AE9082146716000C7602E /* ThirdViewController.swift in Sources */,
 				385147532142A57E0085750D /* TodosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
