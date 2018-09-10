@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		384C88CD214027970020B6D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384C88CC214027970020B6D8 /* AppDelegate.swift */; };
-		384C88CF214027970020B6D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384C88CE214027970020B6D8 /* ViewController.swift */; };
 		384C88D2214027970020B6D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384C88D0214027970020B6D8 /* Main.storyboard */; };
 		384C88D4214027980020B6D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 384C88D3214027980020B6D8 /* Assets.xcassets */; };
 		384C88D7214027980020B6D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 384C88D5214027980020B6D8 /* LaunchScreen.storyboard */; };
-		384C88E2214027980020B6D8 /* todo_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384C88E1214027980020B6D8 /* todo_appTests.swift */; };
-		384C88ED214027980020B6D8 /* todo_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384C88EC214027980020B6D8 /* todo_appUITests.swift */; };
+		3851474C214298770085750D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3851474B214298770085750D /* MainViewController.swift */; };
+		3851474E21429A7C0085750D /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3851474D21429A7C0085750D /* DataSource.swift */; };
+		385147512142A1AF0085750D /* Screen Shot 2018-08-29 at 11.12.39.png in Resources */ = {isa = PBXBuildFile; fileRef = 385147502142A1AF0085750D /* Screen Shot 2018-08-29 at 11.12.39.png */; };
+		385147532142A57E0085750D /* TodosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385147522142A57E0085750D /* TodosViewController.swift */; };
+		385147552142B09A0085750D /* CrossroadsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385147542142B09A0085750D /* CrossroadsTableViewController.swift */; };
+		385147572142BE3E0085750D /* TodoNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385147562142BE3E0085750D /* TodoNewViewController.swift */; };
+		385147592142C1B90085750D /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385147582142C1B90085750D /* Todo.swift */; };
+		3851475D2142CD3C0085750D /* QRScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3851475C2142CD3C0085750D /* QRScannerController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,17 +41,20 @@
 /* Begin PBXFileReference section */
 		384C88C9214027970020B6D8 /* todo-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "todo-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		384C88CC214027970020B6D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		384C88CE214027970020B6D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		384C88D1214027970020B6D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		384C88D3214027980020B6D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		384C88D6214027980020B6D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		384C88D8214027980020B6D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		384C88DD214027980020B6D8 /* todo-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "todo-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		384C88E1214027980020B6D8 /* todo_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todo_appTests.swift; sourceTree = "<group>"; };
-		384C88E3214027980020B6D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		384C88E8214027980020B6D8 /* todo-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "todo-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		384C88EC214027980020B6D8 /* todo_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todo_appUITests.swift; sourceTree = "<group>"; };
-		384C88EE214027980020B6D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3851474B214298770085750D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3851474D21429A7C0085750D /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		385147502142A1AF0085750D /* Screen Shot 2018-08-29 at 11.12.39.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screen Shot 2018-08-29 at 11.12.39.png"; path = "../../../../../../Desktop/Screen Shot 2018-08-29 at 11.12.39.png"; sourceTree = "<group>"; };
+		385147522142A57E0085750D /* TodosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosViewController.swift; sourceTree = "<group>"; };
+		385147542142B09A0085750D /* CrossroadsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossroadsTableViewController.swift; sourceTree = "<group>"; };
+		385147562142BE3E0085750D /* TodoNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoNewViewController.swift; sourceTree = "<group>"; };
+		385147582142C1B90085750D /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		3851475C2142CD3C0085750D /* QRScannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				384C88CB214027970020B6D8 /* todo-app */,
-				384C88E0214027980020B6D8 /* todo-appTests */,
-				384C88EB214027980020B6D8 /* todo-appUITests */,
 				384C88CA214027970020B6D8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,32 +103,29 @@
 		384C88CB214027970020B6D8 /* todo-app */ = {
 			isa = PBXGroup;
 			children = (
+				3851474F2142A1960085750D /* img */,
 				384C88CC214027970020B6D8 /* AppDelegate.swift */,
-				384C88CE214027970020B6D8 /* ViewController.swift */,
 				384C88D0214027970020B6D8 /* Main.storyboard */,
+				3851475C2142CD3C0085750D /* QRScannerController.swift */,
+				385147562142BE3E0085750D /* TodoNewViewController.swift */,
+				385147522142A57E0085750D /* TodosViewController.swift */,
+				385147582142C1B90085750D /* Todo.swift */,
+				385147542142B09A0085750D /* CrossroadsTableViewController.swift */,
 				384C88D3214027980020B6D8 /* Assets.xcassets */,
 				384C88D5214027980020B6D8 /* LaunchScreen.storyboard */,
 				384C88D8214027980020B6D8 /* Info.plist */,
+				3851474B214298770085750D /* MainViewController.swift */,
+				3851474D21429A7C0085750D /* DataSource.swift */,
 			);
 			path = "todo-app";
 			sourceTree = "<group>";
 		};
-		384C88E0214027980020B6D8 /* todo-appTests */ = {
+		3851474F2142A1960085750D /* img */ = {
 			isa = PBXGroup;
 			children = (
-				384C88E1214027980020B6D8 /* todo_appTests.swift */,
-				384C88E3214027980020B6D8 /* Info.plist */,
+				385147502142A1AF0085750D /* Screen Shot 2018-08-29 at 11.12.39.png */,
 			);
-			path = "todo-appTests";
-			sourceTree = "<group>";
-		};
-		384C88EB214027980020B6D8 /* todo-appUITests */ = {
-			isa = PBXGroup;
-			children = (
-				384C88EC214027980020B6D8 /* todo_appUITests.swift */,
-				384C88EE214027980020B6D8 /* Info.plist */,
-			);
-			path = "todo-appUITests";
+			path = img;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				384C88D7214027980020B6D8 /* LaunchScreen.storyboard in Resources */,
+				385147512142A1AF0085750D /* Screen Shot 2018-08-29 at 11.12.39.png in Resources */,
 				384C88D4214027980020B6D8 /* Assets.xcassets in Resources */,
 				384C88D2214027970020B6D8 /* Main.storyboard in Resources */,
 			);
@@ -256,8 +260,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				384C88CF214027970020B6D8 /* ViewController.swift in Sources */,
+				385147592142C1B90085750D /* Todo.swift in Sources */,
+				3851474E21429A7C0085750D /* DataSource.swift in Sources */,
+				385147572142BE3E0085750D /* TodoNewViewController.swift in Sources */,
+				385147552142B09A0085750D /* CrossroadsTableViewController.swift in Sources */,
 				384C88CD214027970020B6D8 /* AppDelegate.swift in Sources */,
+				3851475D2142CD3C0085750D /* QRScannerController.swift in Sources */,
+				3851474C214298770085750D /* MainViewController.swift in Sources */,
+				385147532142A57E0085750D /* TodosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +275,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				384C88E2214027980020B6D8 /* todo_appTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +282,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				384C88ED214027980020B6D8 /* todo_appUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
