@@ -11,17 +11,16 @@ import UIKit
 class CrossroadsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        print(indexPath)
 //        print("Selected row \(indexPath.row) in section \(indexPath.section)")
+    }
+    
+    @IBAction func navigateToCook(_ sender: Any){
+        print("COOK")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     override func didReceiveMemoryWarning() {

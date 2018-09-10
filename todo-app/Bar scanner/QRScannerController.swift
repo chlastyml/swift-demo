@@ -12,6 +12,13 @@ import AVFoundation
 
 class QRScannerController: UIViewController {
     
+    @IBOutlet weak var photoButton: UIButton!
+    
+    @IBAction func photoBtnClick(_ sender: Any) {
+        print(data)
+    }
+    
+    var data: String = ""
     @IBOutlet var messageLabel:UILabel!
     @IBOutlet var topbar: UIView!
     
@@ -87,6 +94,8 @@ class QRScannerController: UIViewController {
             qrCodeFrameView.layer.borderWidth = 2
             view.addSubview(qrCodeFrameView)
             view.bringSubview(toFront: qrCodeFrameView)
+            photoButton.isHidden = true
+            view.bringSubview(toFront: photoButton)
         }
     }
     
@@ -124,34 +133,40 @@ class QRScannerController: UIViewController {
 }
 
 extension QRScannerController: AVCaptureMetadataOutputObjectsDelegate {
-    
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         
-//        print( metadataObjects.count)
+        
+        
         // Check if the metadataObjects array is not nil and it contains at least one object.
         if metadataObjects.count == 0 {
-//            print("Nothing?")
             qrCodeFrameView?.frame = CGRect.zero
-            messageLabel.text = "No QR code is detected"
             return
         }
+//        if (!messageLabel.wroteFlag && metadataObjects.count == 0) {
+//            qrCodeFrameView?.frame = CGRect.zero
+//            messageLabel.text = "-"
+//            return
+//        }
         
         // Get the metadata object.
         let metadataObj = metadataObjects[0] as! AVMetadataMachineReadableCodeObject
         
+        
         if supportedCodeTypes.contains(metadataObj.type) {
-//            print("found?")
             // If the found metadata is equal to the QR code metadata (or barcode) then update the status label's text and set the bounds
             let barCodeObject = videoPreviewLayer?.transformedMetadataObject(for: metadataObj)
             qrCodeFrameView?.frame = barCodeObject!.bounds
             
-            if metadataObj.stringValue != nil {
-//                print("Open")
-//                print(metadataObj.stringValue!)
-//                launchApp(decodedURL: metadataObj.stringValue!)
-                messageLabel.text = metadataObj.stringValue
+                if let code = metadataObj.stringValue{
+                    if(code != self.data){
+                        //                    launchApp(decodedURL: metadataObj.stringValue!)
+                        self.data = code
+                        print(code)
+                        messageLabel.text = code
+                        photoButton.isHidden = false
+                    }
+                }
             }
-        }
     }
     
 }

@@ -23,6 +23,8 @@
 		385AE9042146713100C7602E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385AE9032146713100C7602E /* ViewController.swift */; };
 		385AE9062146714500C7602E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385AE9052146714500C7602E /* SecondViewController.swift */; };
 		385AE9082146716000C7602E /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385AE9072146716000C7602E /* ThirdViewController.swift */; };
+		385AE91421469C9200C7602E /* if_FEZ-05_196911.png in Resources */ = {isa = PBXBuildFile; fileRef = 385AE91321469C9200C7602E /* if_FEZ-05_196911.png */; };
+		385AE91E2146AB1D00C7602E /* Untitled.png in Resources */ = {isa = PBXBuildFile; fileRef = 385AE91D2146AB1D00C7602E /* Untitled.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		385AE9032146713100C7602E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		385AE9052146714500C7602E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		385AE9072146716000C7602E /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		385AE91321469C9200C7602E /* if_FEZ-05_196911.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "if_FEZ-05_196911.png"; path = "../../../../../../Downloads/if_FEZ-05_196911.png"; sourceTree = "<group>"; };
+		385AE91D2146AB1D00C7602E /* Untitled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Untitled.png; path = ../../../../../graphic/Untitled.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,8 @@
 		3851474F2142A1960085750D /* img */ = {
 			isa = PBXGroup;
 			children = (
+				385AE91D2146AB1D00C7602E /* Untitled.png */,
+				385AE91321469C9200C7602E /* if_FEZ-05_196911.png */,
 				385147502142A1AF0085750D /* Screen Shot 2018-08-29 at 11.12.39.png */,
 			);
 			path = img;
@@ -270,6 +276,8 @@
 			files = (
 				384C88D7214027980020B6D8 /* LaunchScreen.storyboard in Resources */,
 				385147512142A1AF0085750D /* Screen Shot 2018-08-29 at 11.12.39.png in Resources */,
+				385AE91E2146AB1D00C7602E /* Untitled.png in Resources */,
+				385AE91421469C9200C7602E /* if_FEZ-05_196911.png in Resources */,
 				384C88D4214027980020B6D8 /* Assets.xcassets in Resources */,
 				384C88D2214027970020B6D8 /* Main.storyboard in Resources */,
 			);

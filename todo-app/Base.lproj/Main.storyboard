@@ -166,12 +166,45 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" tag="-1" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" indentationWidth="15" reuseIdentifier="Cook" id="8l9-xu-vlL">
+                                        <rect key="frame" x="0.0" y="204" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8l9-xu-vlL" id="Iib-A5-vnH">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COOK" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32B-DL-fL9">
+                                                    <rect key="frame" x="46" y="11" width="313" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRy-WL-anZ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                                    <state key="normal" title="&gt;"/>
+                                                    <connections>
+                                                        <action selector="navigateToCook:" destination="IcS-yk-9Gq" eventType="touchUpInside" id="rFu-Zn-uNk"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="hRy-WL-anZ" firstAttribute="top" secondItem="Iib-A5-vnH" secondAttribute="top" id="Ban-ME-woY"/>
+                                                <constraint firstItem="32B-DL-fL9" firstAttribute="leading" secondItem="Iib-A5-vnH" secondAttribute="leadingMargin" constant="30" id="CkQ-1I-yat"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="32B-DL-fL9" secondAttribute="trailing" id="HKS-8r-yFJ"/>
+                                                <constraint firstItem="32B-DL-fL9" firstAttribute="top" secondItem="Iib-A5-vnH" secondAttribute="topMargin" id="IEO-Gz-UDg"/>
+                                                <constraint firstItem="hRy-WL-anZ" firstAttribute="leading" secondItem="Iib-A5-vnH" secondAttribute="leading" id="VwU-ea-05a"/>
+                                                <constraint firstAttribute="trailing" secondItem="hRy-WL-anZ" secondAttribute="trailing" id="iZl-yc-FLy"/>
+                                                <constraint firstAttribute="bottom" secondItem="hRy-WL-anZ" secondAttribute="bottom" id="rwO-gj-qJv"/>
+                                                <constraint firstItem="32B-DL-fL9" firstAttribute="bottom" secondItem="Iib-A5-vnH" secondAttribute="bottomMargin" id="wfc-kc-t7Z"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                             <tableViewSection headerTitle="Settings" id="Skb-TR-qCQ">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" tag="-1" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="15" reuseIdentifier="other section" id="wfw-QO-aXP">
-                                        <rect key="frame" x="0.0" y="232" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="276" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wfw-QO-aXP" id="kK8-SW-jOd">
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
@@ -274,7 +307,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No QR code is detected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Dg-By-6TT">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NO CODE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Dg-By-6TT">
                                 <rect key="frame" x="0.0" y="627" width="375" height="40"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -284,23 +317,37 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xvk-sy-aBV">
+                                <rect key="frame" x="310" y="567" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="GdA-66-EOW"/>
+                                    <constraint firstAttribute="width" constant="50" id="yxb-dc-aj5"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="photo"/>
+                                <connections>
+                                    <action selector="photoBtnClick:" destination="Pe2-8U-Qnp" eventType="touchUpInside" id="q5f-iz-X1Y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="8Bv-Ee-9XE" firstAttribute="trailing" secondItem="Xvk-sy-aBV" secondAttribute="trailing" constant="15" id="I2z-2W-CEY"/>
                             <constraint firstItem="8Bv-Ee-9XE" firstAttribute="trailing" secondItem="8Dg-By-6TT" secondAttribute="trailing" id="WES-Xv-NZc"/>
                             <constraint firstItem="8Bv-Ee-9XE" firstAttribute="bottom" secondItem="8Dg-By-6TT" secondAttribute="bottom" id="WEi-ry-4NS"/>
                             <constraint firstItem="8Dg-By-6TT" firstAttribute="leading" secondItem="8Bv-Ee-9XE" secondAttribute="leading" id="pCq-t4-DdF"/>
+                            <constraint firstItem="8Dg-By-6TT" firstAttribute="top" secondItem="Xvk-sy-aBV" secondAttribute="bottom" constant="10" id="teF-O8-DID"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8Bv-Ee-9XE"/>
                     </view>
                     <navigationItem key="navigationItem" title="Scan" id="irb-qv-eTi"/>
                     <connections>
                         <outlet property="messageLabel" destination="8Dg-By-6TT" id="RxT-uR-6sK"/>
+                        <outlet property="photoButton" destination="Xvk-sy-aBV" id="4iZ-9E-Bt0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iTt-kU-na5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-64" y="-804"/>
+            <point key="canvasLocation" x="-64.799999999999997" y="-804.64767616191909"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="oQD-fH-7h8">
@@ -593,4 +640,7 @@
             <point key="canvasLocation" x="-927.5" y="-1568.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="photo" width="256" height="256"/>
+    </resources>
 </document>
