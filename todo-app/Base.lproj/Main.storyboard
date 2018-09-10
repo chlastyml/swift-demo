@@ -328,9 +328,18 @@
                                     <action selector="photoBtnClick:" destination="Pe2-8U-Qnp" eventType="touchUpInside" id="q5f-iz-X1Y"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NO CODE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTt-kW-KYc">
+                                <rect key="frame" x="10" y="74" width="355" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="BTt-kW-KYc" firstAttribute="leading" secondItem="8Bv-Ee-9XE" secondAttribute="leading" constant="10" id="ARW-1L-2Po"/>
+                            <constraint firstItem="8Bv-Ee-9XE" firstAttribute="trailing" secondItem="BTt-kW-KYc" secondAttribute="trailing" constant="10" id="AUP-kP-Ap7"/>
+                            <constraint firstItem="BTt-kW-KYc" firstAttribute="top" secondItem="8Bv-Ee-9XE" secondAttribute="top" constant="10" id="EQR-xb-zLZ"/>
                             <constraint firstItem="8Bv-Ee-9XE" firstAttribute="trailing" secondItem="Xvk-sy-aBV" secondAttribute="trailing" constant="15" id="I2z-2W-CEY"/>
                             <constraint firstItem="8Bv-Ee-9XE" firstAttribute="trailing" secondItem="8Dg-By-6TT" secondAttribute="trailing" id="WES-Xv-NZc"/>
                             <constraint firstItem="8Bv-Ee-9XE" firstAttribute="bottom" secondItem="8Dg-By-6TT" secondAttribute="bottom" id="WEi-ry-4NS"/>
@@ -341,6 +350,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Scan" id="irb-qv-eTi"/>
                     <connections>
+                        <outlet property="dataView" destination="BTt-kW-KYc" id="K4g-Zw-bXH"/>
                         <outlet property="messageLabel" destination="8Dg-By-6TT" id="RxT-uR-6sK"/>
                         <outlet property="photoButton" destination="Xvk-sy-aBV" id="4iZ-9E-Bt0"/>
                     </connections>

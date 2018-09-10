@@ -14,7 +14,10 @@ class QRScannerController: UIViewController {
     
     @IBOutlet weak var photoButton: UIButton!
     
+    @IBOutlet weak var dataView: UILabel!
     @IBAction func photoBtnClick(_ sender: Any) {
+        dataView.text = data
+        view.bringSubview(toFront: dataView)
         print(data)
     }
     
