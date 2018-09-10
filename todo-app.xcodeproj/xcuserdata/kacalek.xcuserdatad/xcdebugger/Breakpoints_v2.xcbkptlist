@@ -103,11 +103,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "todo-app/CrossroadsTableViewController.swift"
-            timestampString = "558279998.191879"
+            timestampString = "558287165.465861"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "navigateToCook(_:)"
             landmarkType = "7">
          </BreakpointContent>

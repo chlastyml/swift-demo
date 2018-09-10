@@ -25,6 +25,10 @@
 		385AE9082146716000C7602E /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385AE9072146716000C7602E /* ThirdViewController.swift */; };
 		385AE91421469C9200C7602E /* if_FEZ-05_196911.png in Resources */ = {isa = PBXBuildFile; fileRef = 385AE91321469C9200C7602E /* if_FEZ-05_196911.png */; };
 		385AE91E2146AB1D00C7602E /* Untitled.png in Resources */ = {isa = PBXBuildFile; fileRef = 385AE91D2146AB1D00C7602E /* Untitled.png */; };
+		385AE9602146B2AB00C7602E /* timer-pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 385AE95D2146B2AB00C7602E /* timer-pause.png */; };
+		385AE9612146B2AB00C7602E /* timer-reset.png in Resources */ = {isa = PBXBuildFile; fileRef = 385AE95E2146B2AB00C7602E /* timer-reset.png */; };
+		385AE9622146B2AB00C7602E /* timer-start.png in Resources */ = {isa = PBXBuildFile; fileRef = 385AE95F2146B2AB00C7602E /* timer-start.png */; };
+		385AE9652146B48700C7602E /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385AE9642146B48700C7602E /* TimerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,10 @@
 		385AE9072146716000C7602E /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		385AE91321469C9200C7602E /* if_FEZ-05_196911.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "if_FEZ-05_196911.png"; path = "../../../../../../Downloads/if_FEZ-05_196911.png"; sourceTree = "<group>"; };
 		385AE91D2146AB1D00C7602E /* Untitled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Untitled.png; path = ../../../../../graphic/Untitled.png; sourceTree = "<group>"; };
+		385AE95D2146B2AB00C7602E /* timer-pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "timer-pause.png"; path = "../../../../../../../Downloads/timer-pause.png"; sourceTree = "<group>"; };
+		385AE95E2146B2AB00C7602E /* timer-reset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "timer-reset.png"; path = "../../../../../../../Downloads/timer-reset.png"; sourceTree = "<group>"; };
+		385AE95F2146B2AB00C7602E /* timer-start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "timer-start.png"; path = "../../../../../../../Downloads/timer-start.png"; sourceTree = "<group>"; };
+		385AE9642146B48700C7602E /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,8 +127,9 @@
 				385AE8FC2146707C00C7602E /* Navigation */,
 				385AE8F821466E6800C7602E /* TodoApp */,
 				385AE8F721466E2D00C7602E /* Bar scanner */,
-				384C88D8214027980020B6D8 /* Info.plist */,
+				385AE9632146B43400C7602E /* timer */,
 				384C88CC214027970020B6D8 /* AppDelegate.swift */,
+				384C88D8214027980020B6D8 /* Info.plist */,
 				385147542142B09A0085750D /* CrossroadsTableViewController.swift */,
 				384C88D3214027980020B6D8 /* Assets.xcassets */,
 				384C88D5214027980020B6D8 /* LaunchScreen.storyboard */,
@@ -132,6 +141,7 @@
 		3851474F2142A1960085750D /* img */ = {
 			isa = PBXGroup;
 			children = (
+				385AE95A2146B1E100C7602E /* timer-icons */,
 				385AE91D2146AB1D00C7602E /* Untitled.png */,
 				385AE91321469C9200C7602E /* if_FEZ-05_196911.png */,
 				385147502142A1AF0085750D /* Screen Shot 2018-08-29 at 11.12.39.png */,
@@ -168,6 +178,24 @@
 				385AE9072146716000C7602E /* ThirdViewController.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		385AE95A2146B1E100C7602E /* timer-icons */ = {
+			isa = PBXGroup;
+			children = (
+				385AE95D2146B2AB00C7602E /* timer-pause.png */,
+				385AE95E2146B2AB00C7602E /* timer-reset.png */,
+				385AE95F2146B2AB00C7602E /* timer-start.png */,
+			);
+			path = "timer-icons";
+			sourceTree = "<group>";
+		};
+		385AE9632146B43400C7602E /* timer */ = {
+			isa = PBXGroup;
+			children = (
+				385AE9642146B48700C7602E /* TimerViewController.swift */,
+			);
+			path = timer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,12 +302,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				385AE9622146B2AB00C7602E /* timer-start.png in Resources */,
 				384C88D7214027980020B6D8 /* LaunchScreen.storyboard in Resources */,
 				385147512142A1AF0085750D /* Screen Shot 2018-08-29 at 11.12.39.png in Resources */,
 				385AE91E2146AB1D00C7602E /* Untitled.png in Resources */,
+				385AE9612146B2AB00C7602E /* timer-reset.png in Resources */,
 				385AE91421469C9200C7602E /* if_FEZ-05_196911.png in Resources */,
 				384C88D4214027980020B6D8 /* Assets.xcassets in Resources */,
 				384C88D2214027970020B6D8 /* Main.storyboard in Resources */,
+				385AE9602146B2AB00C7602E /* timer-pause.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +345,7 @@
 				384C88CD214027970020B6D8 /* AppDelegate.swift in Sources */,
 				385AE8FE214670A400C7602E /* AlphaVC.swift in Sources */,
 				3851475D2142CD3C0085750D /* QRScannerController.swift in Sources */,
+				385AE9652146B48700C7602E /* TimerViewController.swift in Sources */,
 				385AE9082146716000C7602E /* ThirdViewController.swift in Sources */,
 				385147532142A57E0085750D /* TodosViewController.swift in Sources */,
 			);
